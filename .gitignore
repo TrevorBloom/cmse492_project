@@ -213,8 +213,6 @@ __marimo__/
 
 # Data files (ignore large raw data)
 data/raw/
-data/interim/
-data/processed/
 
 # Model artifacts
 models/
