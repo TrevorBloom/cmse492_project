@@ -206,31 +206,15 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# --- Machine Learning / Data Science additions ---
+# Python cache files
+__pycache__/
+*.pyc
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Data files (ignore large raw data)
+# Environment files
+.env
+
+# Raw data (if large)
 data/raw/
-
-# Model artifacts
-models/
-checkpoints/
-saved_models/
-*.h5
-*.pt
-*.pth
-*.joblib
-*.pkl
-
-# Experiment outputs
-runs/
-outputs/
-logs/
-tensorboard/
-wandb/
-
-# ML cache / temp files
-.cache/
-.tmp/
