@@ -11,7 +11,8 @@ cmse492_project/
 │   ├─ raw/        
 │   └─ processed/ 
 │
-├─ notebooks/      
+├─ notebooks/
+│   └─ exploratory/     
 │
 ├─ src/            
 │
@@ -23,7 +24,7 @@ cmse492_project/
 ```
 * data/raw/ orginal csv files from kaggle, already separated into a training ang test set
 * data/processed/ cleaned and augmented files that will be used to train and test the models
-* notebooks/ notebook files used for data exploration
+* notebooks/exploratory/ notebook files used for data exploration
 * src/ .py pipeline script that that will execute preprocessing, training, and evaluation
 * models/ trained models such as logistic regression
 * figures/ plots and other visualizations created for analysis
