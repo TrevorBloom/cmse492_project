@@ -11,23 +11,30 @@ cmse492_project/
 │   ├─ raw/        
 │   └─ processed/ 
 │
+├─ firgures/
+│
 ├─ notebooks/
 │   └─ exploratory/     
 │
-├─ src/            
+├─ src/  
+│   ├─ evaluation/
+│   ├─ models/        
+│   └─ preprocessing/ 
 │
-├─ models/        
+├─ trained_models/        
 │
-├─ outputs/        
+├─ requirements.txt   
 │
 └─ README.md       
 ```
-* data/raw/ orginal csv files from kaggle, already separated into a training ang test set
-* data/processed/ cleaned and augmented files that will be used to train and test the models
-* notebooks/exploratory/ notebook files used for data exploration
-* src/ .py pipeline script that that will execute preprocessing, training, and evaluation
-* models/ trained models such as logistic regression
+* data/raw/ orginal dataset obtained from kaggle
+* data/processed/ two files, both processed and imputed, one has synthetic entries to aid in training
 * figures/ plots and other visualizations created for analysis
+* notebooks/exploratory/ initial exploration of dataset and baseline logistic regression
+* src/evaluation/ notebook testing and comparing all three models on dataset without synthetic entries
+* src/models/ notebooks containing the training and evaluation of models on dataset with synthetic entries
+* src/preprocessing/ two files, one that cleans and imputes dataset, another that uses SMOTE to add synthetic entries
+* trained_models/ all 3 trained models are saved and located here as either a .pkl or .cbm
 
 # Setup Instructions
 1. Clone Repository
