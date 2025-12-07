@@ -63,6 +63,6 @@ pip install -r requirements.tct
 
 4. Run Scripts
 ```
-cmse492_project>python pipeline/pipeline.py --input pipeline/test.csv --models trained_models --output pipeline/predictions.csv
+python pipeline/pipeline.py --input pipeline/test.csv --models trained_models --output pipeline/predictions.csv
 ```
 This prompt assumes that a raw csv is in the same location as the pipeline. A new csv will be created with predictions from each of the three models, element in the created csv relates to the same element in the given raw csv. A raw csv file is provided in the directory. If testing with a different dataset is required, just put it in the pipeline/ directory and edit the prompt to call the correct csv.
