@@ -16,6 +16,8 @@ cmse492_project/
 ├─ notebooks/
 │   └─ exploratory/     
 │
+├─ pipeline/
+│
 ├─ src/  
 │   ├─ evaluation/
 │   ├─ models/        
@@ -31,6 +33,7 @@ cmse492_project/
 * data/processed/ two files, both processed and imputed, one has synthetic entries to aid in training
 * figures/ plots and other visualizations created for analysis
 * notebooks/exploratory/ initial exploration of dataset and baseline logistic regression
+* pipeline/ contains a pipeline that will preprocess a csv and return a new csv with predictions based on trained models
 * src/evaluation/ notebook testing and comparing all three models on dataset without synthetic entries
 * src/models/ notebooks containing the training and evaluation of models on dataset with synthetic entries
 * src/preprocessing/ two files, one that cleans and imputes dataset, another that uses SMOTE to add synthetic entries
@@ -60,5 +63,6 @@ pip install -r requirements.tct
 
 4. Run Scripts
 ```
-Will be updated to correctly give instructions as project is worked on/completed
+cmse492_project>python pipeline/pipeline.py --input pipeline/test.csv --models trained_models --output pipeline/predictions.csv
 ```
+This prompt assumes that a raw csv is in the same location as the pipeline. A new csv will be created with predictions from each of the three models, element in the created csv relates to the same element in the given raw csv. A raw csv file is provided in the directory. If testing with a different dataset is required, just put it in the pipeline/ directory and edit the prompt to call the correct csv.
