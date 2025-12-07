@@ -8,7 +8,6 @@ This project will use American Express credit card data aqcuired from kaggle to 
 cmse492_project/
 │
 ├─ data/
-│   ├─ raw/        
 │   └─ processed/ 
 │
 ├─ firgures/
@@ -29,7 +28,6 @@ cmse492_project/
 │
 └─ README.md       
 ```
-* data/raw/ orginal dataset obtained from kaggle
 * data/processed/ two files, both processed and imputed, one has synthetic entries to aid in training
 * figures/ plots and other visualizations created for analysis
 * notebooks/exploratory/ initial exploration of dataset and baseline logistic regression
