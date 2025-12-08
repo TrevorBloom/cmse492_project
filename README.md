@@ -56,7 +56,7 @@ source venv/bin/activate
 
 3. Install Dependencies
 ```
-pip install -r requirements.tct
+pip install -r requirements.txt
 ```
 
 4. Run Scripts
